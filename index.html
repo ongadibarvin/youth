@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAYOUT Login</title>
+<link rel="stylesheet" href="style.css"> <!-- Linking the CSS -->
+</head>
+<body>
+    
+<div class="login-container">
+<h2>Login</h2>
+<form action="/login" method="POST">
+<div class="input-group">
+<label for="email">
+<i class="fas fa-envelope"></i>
+</label>
+<input type="email" id="email" name="email" placeholder="Email" required>
+</div>
+<div class="input-group">
+<label for="password">
+<i class="fas fa-lock"></i>
+</label>
+<input type="password" id="password" name="password"
+placeholder="Password" required>
+</div>
+<a href="#">Forgot Password?</a>
+<button type="submit">Login</button>
+<p>Don't have an account? <a href="signup.html">SignUp Here</a></p>
+
+</form>
+</div>
+</body>
+</html>

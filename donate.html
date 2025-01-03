@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+     <body>
+       <!-- Navigation Menu -->
+         <nav class="navbar">
+
+<!-- Donation Content -->
+  <div class="content">
+    <h2>Support MAYOUT with Your Donation</h2>
+<p>
+Your generous donation will go a long way in empowering youth, supporting
+community activities, and providing valuable resources.
+Every contribution helps make a lasting impact on the lives of young people. We
+deeply appreciate your support.
+</p>
+
+<!-- Donation Form -->
+   <section class="donation-section">
+     <h3>Make a Donation</h3>
+      <form action="process_donation.php" method="post">
+           <label for="name">Full Name:</label>
+               <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required><br><br>
+
+<label for="phone">Phone Number:</label>
+
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="donation_amount">Donation Amount (in USD):</label>
+<input type="number" id="donation_amount" name="donation_amount"
+min="1" required><br><br>
+
+<!-- Payment Method Selection -->
+<h3>Select Payment Method</h3>
+<input type="radio" id="paypal" name="payment_method" value="paypal"
+required>
+<label for="paypal">PayPal</label><br>
+<input type="radio" id="credit_card" name="payment_method"
+value="credit_card" required>
+<label for="credit_card">Credit/Debit Card</label><br><br>
+
+<button type="submit" class="button">Donate Now</button>
+</form>
+</section>
+
+<!-- How Your Donation Helps -->
+<section class="donation-info">
+     <h3>How Your Donation Helps</h3>
+<ul>
+        <li><strong>$10:</strong> Provides a youth with educational materials for one
+month.</li>
+<li><strong>$50:</strong> Supports a youth’s participation in a skills-building
+workshop.</li>
+ <li><strong>$100:</strong> Helps fund a youth development program for a
+week.</li>
+
+   <li><strong>$500+:</strong> Contributes to large-scale projects, including
+community outreach and infrastructure improvements.</li>
+   </ul>
+</section>
+           </div>
+</body>
+</html>

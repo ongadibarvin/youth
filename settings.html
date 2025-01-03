@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Navigation Menu -->
+<nav class="navbar">
+
+</nav>
+
+<!-- Settings Content -->
+<div class="content">
+<h2>Account Settings</h2>
+
+<!-- Profile Information Update -->
+<section class="profile-section">
+<h3>Update Profile Information</h3>
+<form action="update_profile.php" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" value="User123"
+required><br><br>
+
+<label for="email">Email:</label>
+
+<input type="email" id="email" name="email" value="user@example.com"
+required><br><br>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" value="+123456789"><br><br>
+
+<button type="submit" class="button">Update Profile</button>
+</form>
+</section>
+
+<!-- Password Change -->
+<section class="password-section">
+<h3>Change Password</h3>
+<form action="change_password.php" method="post">
+<label for="current_password">Current Password:</label>
+<input type="password" id="current_password" name="current_password"
+required><br><br>
+
+<label for="new_password">New Password:</label>
+<input type="password" id="new_password" name="new_password"
+required><br><br>
+
+<label for="confirm_password">Confirm New Password:</label>
+<input type="password" id="confirm_password" name="confirm_password"
+required><br><br>
+
+<button type="submit" class="button">Change Password</button>
+</form>
+</section>
+
+<!-- Notification Settings -->
+<section class="notifications-section">
+<h3>Notification Settings</h3>
+<form action="update_notifications.php" method="post">
+<label for="email_notifications">Email Notifications:</label>
+<input type="checkbox" id="email_notifications" name="email_notifications"
+checked><br><br>
+
+<label for="sms_notifications">SMS Notifications:</label>
+<input type="checkbox" id="sms_notifications"
+name="sms_notifications"><br><br>
+
+<button type="submit" class="button">Update Notifications</button>
+</form>
+</section>
+</div>
+</body>
+</html>
